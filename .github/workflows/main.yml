@@ -1,14 +1,14 @@
 name: melon-ticket-bot
 on:
   schedule:
-    - cron: '*/5 * * * *' # 每5分钟运行一次
+    - cron: '*/5 * * * *' # 每5分钟云端自动刷一次
 jobs:
   job:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Check Tickets
-        uses: mooyoul/melon-ticket-actions@v1.1.0
+        uses: mooyoul/melon-ticket-actions@v1.11.1
         with:
           product-id: 212838
           schedule-id: 100001
