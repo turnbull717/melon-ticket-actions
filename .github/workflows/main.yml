@@ -2,7 +2,7 @@ name: melon-ticket-bot
 on:
   schedule:
     - cron: '*/5 * * * *'
-  workflow_dispatch:    
+  workflow_dispatch:
 jobs:
   job:
     runs-on: ubuntu-latest
